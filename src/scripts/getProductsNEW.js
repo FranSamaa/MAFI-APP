@@ -1,28 +1,31 @@
-const container = document.getElementById('productsContainer');
+const productsContainerNEW = document.getElementById('productsContainerNEW');
 
-const url = 'http://localhost:9000/api/v1/items/';
+const getNewProducts = 'http://localhost:9000/api/v1/items/get/last';
 
-const items = fetch(url)
+const items1 = fetch(getNewProducts)
     .then(response => response.json())
     .then(data => {
         data.forEach(item => {
 
             const html = `
-            <div class="trick__content">
-                <img src="${item.image}" alt="${item.name} image" class="trick__img" />
-                <h3 class="trick__title">${item.name}</h3>
-                <span class="trick__subtitle">${item.description}</span>
-                <span class="trick__price">$${item.price}</span>
-                <!--BOTON DE SHOP QUE REDIRECCIONA AL WPP-->
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=+549112651-7376&text=Hola MAFI, me interesa el producto ${item.name}">
-                    <button class="button trick__button">
-                        <i class="bx bx-cart-alt trick__icon"></i>
+                <div class="new__content swiper-slide">
+                    <div class="new__tag">New</div>
+                    <img src="${item.image}" alt="" class="new__img" />
+                    <h3 class="new__title"></h3>
+                    <span class="new__subtitle">${item.name}</span>
+
+                    <div class="new__prices">
+                        <span class="new__price">$${item.price}</span>
+                        <span class="new__discount">$${item.price * 1.6}</span>
+                    </div>
+
+                    <button class="button new__button">
+                        <i class="bx bx-cart-alt new__icon"></i>
                     </button>
-                </a>
-            </div>
+                </div>
             `;
 
-            container.insertAdjacentHTML('beforeend', html);
+            productsContainerNEW.insertAdjacentHTML('beforeend', html);
         })
     })
     .catch(err => console.log(err));
