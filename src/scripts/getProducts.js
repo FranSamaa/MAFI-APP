@@ -1,12 +1,11 @@
 const container = document.getElementById('productsContainer');
 
-const url = 'http://localhost:9000/api/v1/items/';
+const url = 'http://localhost:9000/api/v1/items/get/';
 
 const items = fetch(url)
     .then(response => response.json())
     .then(data => {
         data.forEach(item => {
-
             const html = `
             <div class="trick__content">
                 <img src="${item.image}" alt="${item.name} image" class="trick__img" />
