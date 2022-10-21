@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets//css/styles.css" />
   <link rel="shortcut icon" href="assets/img/MAFI-LOGO.ico" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -221,39 +222,8 @@
     <section class="section trick" id="trick">
       <h2 class="section__title">Nuestras Velas</h2>
 
-      <div class="trick__container container grid">
-        <div class="trick__content">
-          <img src="assets/img/Vela-Copon.jpg" alt="" class="trick__img" />
-          <h3 class="trick__title">Vela Copon Bombe</h3>
-          <span class="trick__subtitle">tapa de madera</span>
-          <span class="trick__price">$1700</span>
-          <!--BOTON DE SHOP QUE REDIRECCIONA AL WPP-->
-          <a target="_blank"
-            href="https://api.whatsapp.com/send?phone=+549112651-7376&text=Hola MAFI, me interesa el producto Vela Copon"><button
-              class="button trick__button">
-              <i class="bx bx-cart-alt trick__icon"></i>
-            </button></a>
-        </div>
-
-        <div class="trick__content">
-          <img src="assets/img/Vela-Cuenco.jpg" alt="" class="Vela-Cuenco" />
-          <h3 class="trick__title">Vela Cuenco</h3>
-          <span class="trick__subtitle">Lustrado de Algarrobo s/tapa </span>
-          <span class="trick__price">$1390</span>
-          <button class="button trick__button">
-            <i class="bx bx-cart-alt trick__icon"></i>
-          </button>
-        </div>
-
-        <div class="trick__content">
-          <img src="assets/img/Vela-Lata.jpg" alt="" class="Vela-lata" />
-          <h3 class="trick__title">Vela</h3>
-          <span class="trick__subtitle">Lata Grande</span>
-          <span class="trick__price">$1100</span>
-          <button class="button trick__button">
-            <i class="bx bx-cart-alt trick__icon"></i>
-          </button>
-        </div>
+      <div class="trick__container container grid" id="productsContainer">
+        <script src="src/scripts/getProducts.js"></script>
       </div>
     </section>
     <!--Nuevos Productos-->
