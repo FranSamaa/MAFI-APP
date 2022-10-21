@@ -15,7 +15,7 @@
 
   /*Green gradient*/
   --body-color: linear-gradient(90deg, hsl(293, 78%, 51%) 0%, hsl(56, 83%, 52%) 100%);
-  --container-color: linear-gradient(136deg, hsl(328, 86%, 72%) 0%, hsl(312, 81%, 76%) 100%);
+  --container-color: linear-gradient(136deg, hsl(328, 86%, 72%) 0%, hsl(302, 86%, 64%) 100%);
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
