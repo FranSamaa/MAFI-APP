@@ -531,7 +531,6 @@ button{
   margin-bottom: var(--mb-0-5);
   transition: .3s;
 }
-
 .new__content{
   position: relative;
   background: var(--container-color);
@@ -540,6 +539,12 @@ button{
   border-radius: .75rem;
   text-align: center;
   overflow: hidden;
+  margin: 5px;
+}
+
+.new__content img{
+  width: 275px;
+  height: 275px;
 }
 
 .new__tag{
