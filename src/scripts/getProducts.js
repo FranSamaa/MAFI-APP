@@ -1,6 +1,6 @@
 const container = document.getElementById('productsContainer');
 
-const url = 'http://localhost:9000/api/v1/items/get/';
+const url = 'http://ec2-18-230-76-147.sa-east-1.compute.amazonaws.com/api/v1/items/get/';
 
 const items = fetch(url)
     .then(response => response.json())
