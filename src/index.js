@@ -6,7 +6,7 @@ require("dotenv").config(); // Import dotenv ( Crear variables de ambiente custo
 const cors = require("cors"); // Import cors ( para que el front pueda hacer peticiones al back )
 const app = express();
 app.use(cors()); // Para que el front pueda hacer peticiones al back
-const port = process.env.PORT || 9000;
+const port = process.env.PORT || 8000;
 
 // Endpoints
 const userRoutes = require('./route/user');
