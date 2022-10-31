@@ -75,9 +75,9 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--text-color);
-  background: linear-gradient(-45deg, #f3d125, #e73ccd, #ef912d, #23d5ab);
+  background: linear-gradient(-45deg, #f3d125, #e73ccd, #db7d25, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 8s ease infinite;
 }
 @keyframes gradient {
   0% {
@@ -180,6 +180,9 @@ button{
 }
 .nav__logo-img:hover{
   transform: scale(1.2);
+  transition: 0.7s;
+  overflow: hidden;
+
 }
 
 
@@ -255,6 +258,7 @@ button{
 .nav__link:hover{
   color: var(--primary-color);
 }
+
 
 /* Show menu */
 .show-menu{
