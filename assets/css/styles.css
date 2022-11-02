@@ -1002,8 +1002,8 @@ button{
     border-radius: 1.5rem;
   }
   .trick__img{
-    width: 260px;
-    height: 260px;
+    width: 200px;
+    height: 200px;
   }
   .trick__title{
     font-size: var(--h3-font-size);
