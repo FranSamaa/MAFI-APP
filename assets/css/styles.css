@@ -14,7 +14,7 @@
   --text-color-light: hsl(var(--hue), 4%, 55%);
 
   /*Green gradient*/
-  --body-color: linear-gradient(90deg, hsl(293, 78%, 51%) 0%, hsl(56, 83%, 52%) 100%);
+  --body-color: linear-gradient(90deg, #3d0684(293, 78%, 51%) 0%,  #8ea67c(56, 83%, 52%) 100%);
   --container-color: linear-gradient(136deg, hsl(328, 86%, 72%) 0%, hsl(302, 86%, 64%) 100%);
 
   /*========== Font and typography ==========*/
@@ -75,9 +75,9 @@ body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--text-color);
-  background: linear-gradient(-45deg, #f3d125, #e73ccd, #db7d25, #23d5ab);
+  background: linear-gradient(-85deg,#8b6c90, #8ea67c );
   background-size: 400% 400%;
-  animation: gradient 8s ease infinite;
+  animation: gradient 6s ease infinite;
 }
 @keyframes gradient {
   0% {
