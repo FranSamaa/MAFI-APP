@@ -1,18 +1,13 @@
 const express = require("express");
 const user = require("../model/user");
 const router = express.Router();
+const userController = require ("../controller/userController")
 
 // Import user
 const userSchema = require("../model/user");
 
 // Create user
-router.post("/users", (req, res) => {
-    const user = userSchema(req.body);
-    user
-        .save()
-        .then((data) => res.json(data))
-        .catch((err) => res.json(err));
-});
+router.post("/users", userController.createUser)
 
 // Get All Users
 router.get("/users", (req, res) => {

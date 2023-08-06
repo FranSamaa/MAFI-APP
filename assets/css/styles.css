@@ -177,6 +177,7 @@ button{
 
 .nav__logo-img{
   width: 50px;
+  border-radius: 20px;
 }
 .nav__logo-img:hover{
   transform: scale(1.2);
@@ -370,7 +371,7 @@ button{
 /*=============== BUTTONS ===============*/
 .button{
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: #272525;
   color: var(--title-color);
   padding: 1rem 1.75rem;
   border-radius: .5rem;
@@ -379,7 +380,7 @@ button{
 }
 
 .button:hover{
-  background-color: var(--first-color-alt);
+  background-color: #613d97 ;
 }
 
 .button__icon{
@@ -459,11 +460,12 @@ button{
 
 .trick__content{
   position: relative;
-  background: violet;
+  background: #fff;
   border-radius: 1rem;
   padding: 1.5rem 0 1rem 0;
   text-align: center;
   overflow: hidden;
+  color: #272525;
 }
 
 .trick__img{
@@ -484,7 +486,7 @@ button{
 
 .trick__title,
 .trick__price{
-  color: var(--title-color);
+  color: #272525;
   font-weight: var(--font-medium);
   font-size: var(--normal-font-size);
 }
@@ -509,11 +511,12 @@ button{
 
 .trick__content:hover .trick__button{
   right: 0;
+  background-color: #613d97 ;
 }
 
 /*=============== DISCOUNT ===============*/
 .discount__container{
-  background: var(--container-color);
+  
   border-radius: 1rem;
   padding: 2.5rem 0 1.5rem;
   row-gap: .75rem;
@@ -627,7 +630,7 @@ button{
 }
 
 .newsletter__form{
-  background: var(--container-color);
+  background: #fff;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -638,11 +641,11 @@ button{
   width: 70%;
   padding: 0 .5rem;
   background: none;
-  color: var(--title-color);
+  color: #272525;
 }
 
 .newsletter__input::placeholder{
-  color: var(--text-color);
+  color: #272525;
 }
 
 /*=============== FOOTER ===============*/
@@ -721,7 +724,7 @@ button{
 
 .footer__social-link{
   display: inline-flex;
-  background: var(--container-color);
+  background: #272525;
   padding: .25rem;
   border-radius: .25rem;
   color: var(--title-color);
@@ -729,7 +732,7 @@ button{
 }
 
 .footer__social-link:hover{
-  background: var(--body-color);
+  background: #613d97;
 }
 
 .footer__title{
@@ -762,7 +765,7 @@ button{
 /*=============== SCROLL UP ===============*/
 .scrollup{
   position: fixed;
-  background: var(--container-color);
+  background: #272525;
   right: 1rem;
   bottom: -20%;
   display: inline-flex;
@@ -779,7 +782,7 @@ button{
 }
 
 .scrollup:hover{
-  background: var(--container-color);
+  background: #613d97;
   opacity: 1;
 }
 
@@ -1107,15 +1110,15 @@ button{
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #03e9f4;
+  color: #8b6c90;
   font-size: 12px;
 }
 
-.login-box form a {
+.login-box form button {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: #8b6c90;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1123,16 +1126,17 @@ button{
   transition: .5s;
   margin-top: 40px;
   letter-spacing: 4px
+
 }
 
-.login-box a:hover {
-  background: #03e9f4;
+.login-box button:hover {
+  background: #8b6c90;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+  box-shadow: 0 0 5px #8b6c90,
+              0 0 25px #8b6c90,
+              0 0 50px #8b6c90,
+              0 0 100px #8b6c90;
 }
 
 .login-box a span {
@@ -1145,7 +1149,7 @@ button{
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, #8b6c90);
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -1163,7 +1167,7 @@ button{
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, #8b6c90);
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -1182,7 +1186,7 @@ button{
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, #8b6c90);
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -1196,12 +1200,12 @@ button{
   }
 }
 
-.login-box a span:nth-child(4) {
+.login-box button span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, #8b6c90);
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }
